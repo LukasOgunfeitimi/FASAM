@@ -58,7 +58,7 @@ def populate():
     for i in range(3):
         zone = Zone(i + 1, FireAlarm, SecurityAlarm)
         zones.append(zone)
-    #activate_every_alarm(zones)
+    activate_every_alarm(zones)
     #activate_every_alarm_in_specified_zone(zones, 1)
     #activate_false_alarm_everywhere(zones)
     #activate_false_alarm_in_specificed_zone(zones, 1)

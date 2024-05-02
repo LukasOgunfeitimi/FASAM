@@ -10,14 +10,7 @@ class Zone:
     # Check all alarms and append activated
     # ones to an array
     def check_alarms(self):
-        activated = []
-        for alarm in self.alarms:
-            if alarm.activated == True:
-                activated.append(alarm)
-        return activated
-    
-    def getid(self):
-        return self.id
+        return [a for a in self.alarms if a.activated]
     
     def start_protocol(self):
         self.call_emergency_services()
